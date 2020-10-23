@@ -1,5 +1,29 @@
 # SQL - Question Junior
 
+41
+
+The HAVING clause is evaluated before the SELECT - so the server doesn't yet know about that alias.
+
+1) First, the product of all tables in the FROM clause is formed.
+
+2) The WHERE clause is then evaluated to eliminate rows that do not satisfy the search_condition.
+
+3) Next, the rows are grouped using the columns in the GROUP BY clause.
+
+4) Then, groups that do not satisfy the search_condition in the HAVING clause are eliminated.
+
+5) Next, the expressions in the SELECT statement target list are evaluated.
+
+6) If the DISTINCT keyword in present in the select clause, duplicate rows are now eliminated.
+
+7) The UNION is taken after each sub-select is evaluated.
+
+8) Finally, the resulting rows are sorted according to the columns specified in the ORDER BY clause.
+
+9) TOP clause is executed.
+
+
+
 1) Determine the number of duplicates in a table.
 
 ```sql
